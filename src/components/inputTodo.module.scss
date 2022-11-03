@@ -1,0 +1,101 @@
+.inner {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.inputText {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.label {
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+.defaultRadio {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+%styleRadio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -35px;
+  border-radius: 50%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.red {
+  @extend %styleRadio;
+  border: 2px solid red;
+}
+.darkorchid {
+  @extend %styleRadio;
+  border: 2px solid darkorchid;
+}
+.blue {
+  @extend %styleRadio;
+  border: 2px solid blue;
+}
+.orange {
+  @extend %styleRadio;
+  border: 2px solid orange;
+}
+.green {
+  @extend %styleRadio;
+  border: 2px solid green;
+}
+
+%styleRadio-color {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.defaultRadio:checked + .styleRadio-red::before {
+  @extend %styleRadio-color;
+  background-color: red;
+}
+.defaultRadio:checked + .styleRadio-darkorchid::before {
+  @extend %styleRadio-color;
+  background-color: darkorchid;
+}
+.defaultRadio:checked + .styleRadio-blue::before {
+  @extend %styleRadio-color;
+  background-color: blue;
+}
+.defaultRadio:checked + .styleRadio-orange::before {
+  @extend %styleRadio-color;
+  background-color: orange;
+}
+.defaultRadio:checked + .styleRadio-green::before {
+  @extend %styleRadio-color;
+  background-color: green;
+}
+
+.defaultRadio:focus + .red {
+  box-shadow: 0 0 0 2px #000;
+}
+.defaultRadio:focus + .darkorchid {
+  box-shadow: 0 0 0 2px #000;
+}
+.defaultRadio:focus + .blue {
+  box-shadow: 0 0 0 2px #000;
+}
+.defaultRadio:focus + .orange {
+  box-shadow: 0 0 0 2px #000;
+}
+.defaultRadio:focus + .green {
+  box-shadow: 0 0 0 2px #000;
+}

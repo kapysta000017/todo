@@ -1,37 +1,18 @@
-import React, { useState } from 'react';
-import TodoLists from './components/TodoLists';
-import InputTodo from './components/InputTodo';
-
-const colors = ['grey', 'red', 'blue', 'orange', 'green'];
+import React, { useState } from "react"
+import TodoList from "./components/TodoList"
+import InputTodo from "./components/InputTodo"
+import { todos } from "./bd/bd"
+import "./app.scss"
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      text: 'Попробовать создать ToDo',
-      color: 'red',
-      completed: false,
-    },
-    {
-      id: 2,
-      text: 'Сохранить задачи в массив стейта',
-      color: 'green',
-      completed: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState(todos)
   return (
-    <div className="App">
-      <div className="todo">
-        <h2>Список задач</h2>
-        {tasks.map((obj) => (
-          <TodoLists key={obj.id} setTasks={setTasks} obj={obj} />
-        ))}
-        <div className="todo-input">
-          <InputTodo setTasks={setTasks} colors={colors} />
-        </div>
-      </div>
+    <div className="app">
+      <h2>Список задач</h2>
+      <TodoList setTasks={setTasks} tasks={tasks} />
+      <InputTodo setTasks={setTasks} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
