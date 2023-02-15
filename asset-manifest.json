@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/todojs.github.io/static/css/main.4b0cd228.chunk.css",
+    "main.js": "/todojs.github.io/static/js/main.325af9f6.chunk.js",
+    "main.js.map": "/todojs.github.io/static/js/main.325af9f6.chunk.js.map",
+    "runtime-main.js": "/todojs.github.io/static/js/runtime-main.0550c1ca.js",
+    "runtime-main.js.map": "/todojs.github.io/static/js/runtime-main.0550c1ca.js.map",
+    "static/js/2.9fde1cd9.chunk.js": "/todojs.github.io/static/js/2.9fde1cd9.chunk.js",
+    "static/js/2.9fde1cd9.chunk.js.map": "/todojs.github.io/static/js/2.9fde1cd9.chunk.js.map",
+    "index.html": "/todojs.github.io/index.html",
+    "static/css/main.4b0cd228.chunk.css.map": "/todojs.github.io/static/css/main.4b0cd228.chunk.css.map",
+    "static/js/2.9fde1cd9.chunk.js.LICENSE.txt": "/todojs.github.io/static/js/2.9fde1cd9.chunk.js.LICENSE.txt",
+    "static/media/todoList.module.scss": "/todojs.github.io/static/media/check.d866694a.svg",
+    "static/media/close.64f09d76.svg": "/todojs.github.io/static/media/close.64f09d76.svg",
+    "static/media/pen.d3c0b4ce.svg": "/todojs.github.io/static/media/pen.d3c0b4ce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0550c1ca.js",
+    "static/js/2.9fde1cd9.chunk.js",
+    "static/css/main.4b0cd228.chunk.css",
+    "static/js/main.325af9f6.chunk.js"
+  ]
+}
